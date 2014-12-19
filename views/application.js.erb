@@ -21,8 +21,18 @@ var onMessage = function(message) {
         });
         break;
     case "rikinderu":
+        var val = $(":text").val();
+        var pos = ((data.count / parseInt(val)) * 70) +10;
+        var $point = $(".main-bg ." + data.target + " .point")
+        $point.removeClass("hard").addClass("hard").css("bottom", pos + "%");
+
         $("#" + data.target).find("span").html(data.count);
-        new Audio("/assets/sounds/rikinderu.mp3").play();
+        var sound = new Audio("/assets/sounds/rikinderu.mp3");
+        sound.addEventListener("ended", function() {
+            $point.removeClass("hard")
+        })
+        sound.play();
+
         break;
     case "reset":
         $(".count").html(0);
@@ -44,6 +54,7 @@ function out(data) {
         out_sound = new Audio("/assets/sounds/" + data.target + ".mp3");
         out_sound.addEventListener("ended", function() {
             send({command: "unlock"});
+            $(".main-bg ." + data.target + " .point").css("bottom","10%");
             $("#out").hide();
         });
         out_sound.play();

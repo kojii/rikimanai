@@ -30,12 +30,83 @@
   text-align: center;
 }
 
+.point {
+}
+
 .main-bg {
   background: url("/assets/images/screen/main_screen.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   min-height: 600px;
+  .col-md-3 {
+    position: relative;
+    min-height: 600px;
+    .point {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 50%;
+      bottom: 10%;
+      margin-left: -50px;
+    }
+    &.shuhei {
+      .point {
+        background: url("/assets/images/screen/face/shuhei_nomal.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &.hard {
+          background: url("/assets/images/screen/face/shuhei_hard.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+    &.abe {
+      .point {
+        background: url("/assets/images/screen/face/abe_normal.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &.hard {
+          background: url("/assets/images/screen/face/abe_hard.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+    &.kakizaki {
+      .point {
+        background: url("/assets/images/screen/face/kakizaki_normal.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &.hard {
+          background: url("/assets/images/screen/face/kakizaki_hard.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+    &.koji {
+      .point {
+        background: url("/assets/images/screen/face/saito_normal.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &.hard {
+          background: url("/assets/images/screen/face/saito_hard.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
 }
 .counts {
   p {

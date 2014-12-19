@@ -1,6 +1,5 @@
 doctype html
-html minifest="rikimanai.appcache"
-
+html manifest="rikimanai.appcache"
 
   head
     title Ruby WebSockets Chat Demo
@@ -20,18 +19,6 @@ html minifest="rikimanai.appcache"
         img.phone-btn src="assets/images/phone/abe_btn.png"
       button.rikinderu.phone-boader data-target="koji"
         img.phone-btn src="assets/images/phone/saito_btn.png"
-
-      / button.rikinderu.btn.btn-primary.btn-lg.btn-block data-target="kakizaki" 柿崎
-      / button.rikinderu.btn.btn-primary.btn-lg.btn-block data-target="abe"     あべ
-      / button.rikinderu.btn.btn-primary.btn-lg.btn-block data-target="koji"    斉藤
-
-
-    /! Modal
-    #myModal.modal.fade tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-      .modal-dialog
-        .modal-content
-          .modal-body
-            | ...
 
     script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"
     script type="text/javascript" src="assets/js/bootstrap.min.js"

@@ -1,14 +1,38 @@
 CACHE MANIFEST
-# 2014-12-17: v11
+# 2014-12-17: v29
 
 
 NETWORK:
 *
 
 CACHE:
+#sounds
 /assets/sounds/abe.mp3
 /assets/sounds/effect.mp3
 /assets/sounds/kakizaki.mp3
 /assets/sounds/koji.mp3
 /assets/sounds/rikinderu.mp3
 /assets/sounds/shuhei.mp3
+
+#images
+/assets/images/screen/main_screen.png
+/assets/images/screen/out/abe_out.png
+/assets/images/screen/out/abe_out_texton.png
+/assets/images/screen/out/abe_out_textonly.png
+/assets/images/screen/out/kakizaki_out.png
+/assets/images/screen/out/kakizaki_out_texton.png
+/assets/images/screen/out/kakizkai_out_textonly.png
+/assets/images/screen/out/saito_out.png
+/assets/images/screen/out/saito_out_texton.png
+/assets/images/screen/out/saito_out_textonly.png
+/assets/images/screen/out/shuhei_out.png
+/assets/images/screen/out/shuhei_out_texton.png
+/assets/images/screen/out/shuhei_out_textonly.png
+/assets/images/screen/face/abe_hard.png
+/assets/images/screen/face/abe_normal.png
+/assets/images/screen/face/kakizaki_hard.png
+/assets/images/screen/face/kakizaki_normal.png
+/assets/images/screen/face/saito_hard.png
+/assets/images/screen/face/saito_normal.png
+/assets/images/screen/face/shuhei_hard.png
+/assets/images/screen/face/shuhei_nomal.png
