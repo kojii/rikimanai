@@ -42,3 +42,37 @@
     text-align: center;
   }
 }
+
+#out {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  min-height: 600px;
+  display: none;
+  &.shuhei {
+    background: url("/assets/images/screen/out/shuhei_out_texton.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &.kakizaki {
+    background: url("/assets/images/screen/out/kakizaki_out_texton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &.abe {
+    background: url("/assets/images/screen/out/abe_out_texton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &.koji {
+    background: url("/assets/images/screen/out/saito_out_texton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

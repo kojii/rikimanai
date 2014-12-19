@@ -44,12 +44,11 @@ function out(data) {
         out_sound = new Audio("/assets/sounds/" + data.target + ".mp3");
         out_sound.addEventListener("ended", function() {
             send({command: "unlock"});
-            $("#myModal").modal("hide");
+            $("#out").hide();
         });
         out_sound.play();
     });
-    $("#myModal").find(".modal-body").html(data.name + "アウト！");
-    $("#myModal").modal("show");
+    $("#out").removeClass().addClass(data.target).show();
     $("#" + data.target).find("span").html(0);
     audio.play();
 }
