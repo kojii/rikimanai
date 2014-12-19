@@ -22,7 +22,7 @@ ws.onmessage = function(message) {
 //    }, 10*1000);
 //}
 
-$(document).on("mousedown touchstart", ".rikinderu", function(event) {
+$(document).on("touchstart", ".rikinderu", function(event) {
     if (!lock) {
         $(this).find(".phone-btn").addClass("on")
         event.preventDefault();
@@ -32,7 +32,7 @@ $(document).on("mousedown touchstart", ".rikinderu", function(event) {
     }
 });
 
-$(document).on("mouseup touchend", ".rikinderu", function(event) {
+$(document).on("touchend", ".rikinderu", function(event) {
     if (!lock) {
         $(this).find(".phone-btn").removeClass("on")
         event.preventDefault();
