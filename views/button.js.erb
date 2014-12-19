@@ -22,12 +22,19 @@ ws.onmessage = function(message) {
 //    }, 10*1000);
 //}
 
-$(document).on("click", ".rikinderu", function(event) {
-    console.log("lock? %s", lock);
+$(document).on("mousedown touchstart", ".rikinderu", function(event) {
     if (!lock) {
+        $(this).find(".phone-btn").addClass("on")
         event.preventDefault();
         var target = $(this).data("target");
         ws.send(JSON.stringify({command: "rikinderu", target: target}));
         new Audio("/assets/sounds/rikinderu.mp3").play();
+    }
+});
+
+$(document).on("mouseup touchend", ".rikinderu", function(event) {
+    if (!lock) {
+        $(this).find(".phone-btn").removeClass("on")
+        event.preventDefault();
     }
 });

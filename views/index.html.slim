@@ -1,6 +1,5 @@
 doctype html
 html manifest="rikimanai.appcache"
-
   head
     title Ruby WebSockets Chat Demo
     link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen"
@@ -12,13 +11,13 @@ html manifest="rikimanai.appcache"
     .phone-container
       img.phone-top-image src="assets/images/phone/top.png"
       button.rikinderu.phone-boader data-target="shuhei"
-        img.phone-btn src="assets/images/phone/shuhei_btn.png"
+        .phone-btn.shuhei
       button.rikinderu.phone-boader data-target="kakizaki"
-        img.phone-btn src="assets/images/phone/kakizaki_btn.png"
+        .phone-btn.kakizaki
       button.rikinderu.phone-boader data-target="abe"
-        img.phone-btn src="assets/images/phone/abe_btn.png"
+        .phone-btn.abe
       button.rikinderu.phone-boader data-target="koji"
-        img.phone-btn src="assets/images/phone/saito_btn.png"
+        .phone-btn.koji
 
     script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"
     script type="text/javascript" src="assets/js/bootstrap.min.js"
